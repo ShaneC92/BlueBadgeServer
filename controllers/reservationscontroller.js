@@ -51,7 +51,7 @@ router.get('/time', (req, res) => {
 
 //UPDATE
 router.put('/:id', (req, res) => {
-    Reserve.update(req.body, {
+    Reserve.update(req.body.reserve, {
         where: {
             id: req.params.id
         }
